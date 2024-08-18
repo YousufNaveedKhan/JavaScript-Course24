@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture03: Conditional Statement (Switch Case)</title>
+</head>
+<body>
+    
+    <script>
+        // Vowels (Program #1):
+        // var vowels = prompt('Enter any alphabet');
+
+        // switch (vowels) {
+        //     case 'a':
+        //     case 'A':
+        //         document.write("It's a vowel: " + vowels);
+        //         break;
+
+        //     case 'e':
+        //     case 'E':
+        //         document.write("It's a vowel: " + vowels);
+        //         break;
+
+        //     case 'i':
+        //     case 'I':
+        //         document.write("It's a vowel: " + vowels);
+        //         break;
+
+        //     case 'o':
+        //     case 'O':
+        //         document.write("It's a vowel: " + vowels);
+        //         break;
+
+        //     case 'u':
+        //     case 'U':
+        //         document.write("It's a vowel: " + vowels);
+        //         break;
+
+        //     default:
+        //         document.write("It's a consonant");
+        //         break;
+        // }
+
+        // Vowels (Program #2):
+        var vowels = prompt('Enter any alphabet');
+
+        switch (vowels.toLowerCase()) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                document.write("It's a vowel: " + vowels);
+                break;
+
+            default:
+                document.write("It's a consonant");
+                break;
+        }
+    </script>
+</body>
+</html>

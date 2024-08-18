@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture04: Loops</title>
+</head>
+<body>
+    
+    <script>
+        var dob = parseInt(prompt("Enter your birth year"));
+        var currentYear = 2024;
+        var count = 0;
+
+        for (var i = dob; i <= currentYear; i++) {
+            if (i % 4 === 0) {
+                count++;
+                document.write("It's a leap year " + i + "<br>");
+            } else {
+                document.write("It's not a leap year " + i + "<br>");
+            }
+        }
+
+        var age = currentYear - dob;
+
+        document.write('Total leap years count since your birth year: ' + count + '<br>');
+        document.write('Your age: ' + age + '<br>');
+    </script>
+
+</body>
+</html>

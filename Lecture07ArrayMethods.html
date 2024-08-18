@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture07: Array Methods</title>
+</head>
+<body>
+    <script>
+        // Array of ages
+        var ages = ['20', '21', '19'];
+
+        // Array of student names
+        var studentNames = ['Anas', 'Uzair', 'Yahya'];
+
+        // Push method
+        document.write('Initial student names: ' + studentNames + '<br>');
+        studentNames.push('Subhan');
+        document.write('After push: ' + studentNames + '<br><br>');
+
+        // Unshift method
+        document.write('Before unshift: ' + studentNames + '<br>');
+        studentNames.unshift('Ali');
+        document.write('After unshift: ' + studentNames + '<br><br>');
+
+        // Index method
+        document.write('Before index method: ' + studentNames + '<br>');
+        studentNames[3] = 'Rameez';
+        document.write('After index method: ' + studentNames + '<br><br>');
+
+        // Pop method
+        document.write('Before pop: ' + studentNames + '<br>');
+        studentNames.pop();
+        document.write('After pop: ' + studentNames + '<br><br>');
+
+        // Shift method
+        document.write('Before shift: ' + studentNames + '<br>');
+        studentNames.shift();
+        document.write('After shift: ' + studentNames + '<br><br>');
+
+        // Length method
+        document.write('Length of my array list: ' + studentNames.length + '<br><br>');
+
+        // IndexOf method
+        document.write('Index of Uzair: ' + studentNames.indexOf('Uzair') + '<br><br>');
+
+        // Sort method
+        document.write('Sorted array list: ' + studentNames.sort() + '<br><br>');
+
+        // Slice method
+        var mySliceList = studentNames.slice(1);
+        document.write('Slice of my array list: ' + mySliceList + '<br><br>');
+
+        // Concat method
+        var names = ['Babar', 'Azam', 'Shoaib', 'Zafar'];
+        var concatenatedNames = mySliceList.concat(names);
+        document.write('Concatenated arrays: ' + concatenatedNames + '<br><br>');
+
+        // Splice method
+        document.write('Before splice: ' + studentNames + '<br>');
+        document.write('Spliced list: ' + studentNames.splice(1, 2) + '<br>');
+        document.write('Updated list after splice: ' + studentNames + '<br><br>');
+    </script>
+</body>
+</html>

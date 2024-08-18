@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture02: Operators and If Else</title>
+</head>
+<body>
+
+    <script>
+        // Get input values
+        var num1 = parseInt(prompt('Enter your first value'));
+        var opr = prompt('Enter your operator');
+        var num2 = parseInt(prompt('Enter your second value'));
+
+        // Calculate results
+        var answerAdd = num1 + num2;
+        var answerSub = num1 - num2;
+        var answerMul = num1 * num2;
+        var answerDiv = num1 / num2;
+
+        // Display result based on operator
+        if (opr === '+') {
+            document.write(num1 + ' + ' + num2 + ' = ' + answerAdd + '<br>');
+        } else if (opr === '-') {
+            document.write(num1 + ' - ' + num2 + ' = ' + answerSub + '<br>');
+        } else if (opr === '*') {
+            document.write(num1 + ' * ' + num2 + ' = ' + answerMul + '<br>');
+        } else if (opr === '/') {
+            document.write(num1 + ' / ' + num2 + ' = ' + answerDiv + '<br>');
+        } else {
+            document.write('<b>Invalid Operator or Values</b>');
+        }
+    </script>
+
+</body>
+</html>
